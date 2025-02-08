@@ -1,5 +1,5 @@
 use super::mystd::ffi::OsStr;
-use super::mystd::os::unix::prelude::*;
+use super::mystd::os::unix::ffi::OsStrExt;
 use super::{Library, LibrarySegment};
 use alloc::borrow::ToOwned;
 use alloc::vec::Vec;

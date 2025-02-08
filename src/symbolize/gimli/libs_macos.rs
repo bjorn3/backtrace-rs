@@ -1,9 +1,9 @@
 #![allow(deprecated)]
 
 use super::mystd::ffi::OsStr;
-use super::mystd::os::unix::prelude::*;
-use super::mystd::prelude::v1::*;
+use super::mystd::os::unix::ffi::OsStrExt;
 use super::{Library, LibrarySegment};
+use alloc::vec::Vec;
 use core::convert::TryInto;
 use core::ffi::CStr;
 use core::mem;

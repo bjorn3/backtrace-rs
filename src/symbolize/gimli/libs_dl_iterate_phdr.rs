@@ -4,7 +4,7 @@
 
 use super::mystd::env;
 use super::mystd::ffi::{OsStr, OsString};
-use super::mystd::os::unix::prelude::*;
+use super::mystd::os::unix::ffi::OsStrExt;
 use super::{parse_running_mmaps, Library, LibrarySegment};
 use alloc::borrow::ToOwned;
 use alloc::vec::Vec;

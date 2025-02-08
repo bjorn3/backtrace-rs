@@ -1,6 +1,6 @@
 use super::super::super::windows_sys::*;
 use super::mystd::ffi::OsString;
-use super::mystd::os::windows::prelude::*;
+use super::mystd::os::windows::ffi::OsStrExt;
 use super::{coff, mmap, Library, LibrarySegment};
 use alloc::vec;
 use alloc::vec::Vec;

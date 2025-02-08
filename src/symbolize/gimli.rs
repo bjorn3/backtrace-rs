@@ -10,13 +10,13 @@ use super::BytesOrWideString;
 use super::ResolveWhat;
 use super::SymbolName;
 use addr2line::gimli;
+use alloc::vec::Vec;
 use core::convert::TryInto;
 use core::mem;
 use libc::c_void;
 use mystd::ffi::OsString;
 use mystd::fs::File;
 use mystd::path::Path;
-use mystd::prelude::v1::*;
 
 #[cfg(backtrace_in_libstd)]
 mod mystd {
